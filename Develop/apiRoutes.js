@@ -1,6 +1,5 @@
 const uuid = require('uuid');
-const fs = require('fs/promises');
-const { response, json } = require('express');
+const fs = require('fs');
 const router = require("express").Router();
 
 
@@ -8,7 +7,7 @@ router.get("/notes", (req, res) => {
     const data = fs.readFileSync("./db/db.json");
     res.json(JSON.parse(data));
 
-    console.log(data);
+    console.log(JSON.parse(data));
 });
 
 router.post("/notes", (req, res) => {
@@ -19,7 +18,7 @@ router.post("/notes", (req, res) => {
     fs.writeFileSync("./db/db.json", JSON.stringify(notes));
     res.json(notes);
 
-    console.log(res.json(notes));
+    console.log( JSON.stringify(notes));
 });
 
 
@@ -30,7 +29,7 @@ router.delete('/notes/:id', (req, res) => {
 
     res.json(removeNote);
 
-    console.log(res.json(removeNote));
+    console.log(JSON.stringify(removeNote));
 })
 
 module.exports = router
