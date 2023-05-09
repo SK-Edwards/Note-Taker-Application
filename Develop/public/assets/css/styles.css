@@ -5,6 +5,10 @@ body {
   padding: 0;
 }
 
+#head {
+ margin-top: 80px;
+}
+
 .save-note {
   display: none;
 }
