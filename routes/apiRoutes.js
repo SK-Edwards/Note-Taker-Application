@@ -4,14 +4,14 @@ const router = require("express").Router();
 
 
 router.get("/notes", (req, res) => {
-    const data = fs.readFileSync("./db/db.json");
+    const data = fs.readFileSync('./db/db.json');
     res.json(JSON.parse(data));
 
     console.log(JSON.parse(data));
 });
 
 router.post("/notes", (req, res) => {
-    const notes = JSON.parse(fs.readFileSync("./db/db.json"));
+    const notes = JSON.parse(fs.readFileSync('./db/db.json'));
     const newNote = req.body;
     newNote.id = uuid.v4();
     notes.push(newNote);
