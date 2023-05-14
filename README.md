@@ -8,6 +8,7 @@ A note taking application.
 
 The application allows the user to add a title and body to a note, save it and access it at a later date. The saved messages populate the sidebar.
 
+![](Screenshot 2023-05-13 162508.png)
 
 Click on the link to see the deployed app.
 
