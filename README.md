@@ -8,7 +8,7 @@ A note taking application.
 
 The application allows the user to add a title and body to a note, save it and access it at a later date. The saved messages populate the sidebar.
 
-![*](Screenshot 2023-05-13 162508.png)
+![*]([Screenshot 2023-05-13 162508.png](https://github.com/SK-Edwards/Note-Taker-Application/blob/main/images/Screenshot%202023-05-13%20162508.png?raw=true))
 
 Click on the link to see the deployed app.
 
